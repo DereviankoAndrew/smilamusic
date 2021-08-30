@@ -1,0 +1,200 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smila Music</title>
+    <link rel="stylesheet" href="{% static 'smilaMusicSite/styles/main.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header" id="header">
+        <div class="logo-div">
+            <a href="/">
+                <h1 class="header-title">Smila Music School</h1>
+                <img class="logo" src="{% static 'smilaMusicSite/images/rock_hand.png' %}" alt="Logo">
+            </a>
+        </div>
+
+        <div class="part-of-us">
+            <a href="#enter-band">
+                <button class="btn-part-of-us">Стати частиною нашої сім'ї</button>
+            </a>
+        </div>
+
+        <div class="navigation">
+            <a class="link-button" href="#explanation">
+                <button class="navigation-button">Хто ми?</button>
+            </a>
+            <a href="#examples">
+                <button class="navigation-button">Творчість учнів</button>
+            </a>
+            <a href="#directions">
+                <button class="navigation-button">Напрямки для розвитку</button>
+            </a>
+            <a href="#socmedia">
+                <button class="navigation-button">Соц. мережі</button>
+            </a>
+            <a href="#location">
+                <button class="navigation-button">Розташування</button>
+            </a>
+            <a href="#contacts">
+                <button class="navigation-button">Контакти</button>
+            </a>
+
+        </div>
+
+        <hr>
+    </header>
+    </div>
+
+    <div class="slide-to-top">
+    <div class="container">
+        <div class="explanation" id="explanation">
+            <h1 class="secondary-h1">Хто ми?</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dicta doloribus in, nisi possimus similique sit ut? At consequuntur eligendi esse id illo incidunt, ipsa, minus, necessitatibus neque omnis sed!</p>
+
+            <u><h1 class="students-amount-text">Наша сім'я налічує {{ students_amount.amount }} учнів</h1></u>
+
+            <div class="scale-children"><img class="scale-children" width="100%" height="200px" src="{% static 'smilaMusicSite/images/children.png' %}" alt="Children Rocking"></div>
+
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="examples" id="examples">
+            <h1 class="secondary-h1">Творчість учнів</h1>
+            <iframe class="children-video" width="560" height="315" src="https://www.youtube.com/embed/eFIxkOp7RCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="children-video" width="560" height="315" src="https://www.youtube.com/embed/O6JGC8Sw0ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="directions" id="directions">
+            <h1 class="secondary-h1">Напрямки для розвитку</h1>
+            <h2 class="description">Оберіть свою стихію, своє натхнення, свою "медитацію"</h2>
+            <div class="direction-photos">
+                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/drums.png' %}" alt="Drums"></div>
+                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/e-guitar.png' %}" alt="Electric Guitar"></div>
+                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/piano.png' %}" alt="Piano"></div>
+                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/b-guitar.png' %}" alt="Bass Guitar"></div>
+                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/vocals.png' %}" alt="Vocals"></div>
+
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="socmedia" id="socmedia">
+            <h1 class="secondary-h1">Наші соціальні мережі</h1>
+
+            <div class="socmedia-buttons">
+                <a href="https://www.facebook.com/watch/MusicalUkraine/" target="_blank">
+                    <img class="socmedia-logo" src="{% static 'smilaMusicSite/images/facebook-logo.png' %}" alt="">
+                </a>
+                <a href="https://www.instagram.com/smila_music/" target="_blank">
+                    <img class="socmedia-logo" src="{% static 'smilaMusicSite/images/instagram-logo.png' %}" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCL6ClV-cCIN7T6-75Sif_fQ" target="_blank">
+                    <img class="socmedia-logo" src="{% static 'smilaMusicSite/images/youtube-logo.png' %}" alt="">
+                </a>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="location" id="location">
+            <h1 class="secondary-h1">Розташування</h1>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2740855843!2d-118.69192293994556!3d34.020161300942476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1630266824985!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="contacts" id="contacts">
+            <h1 class="secondary-h1">Контакти</h1>
+            <div class="table">
+                <table border="1">
+               <tr>
+                <th>Напрямок</th>
+                <th>Номер телефону</th>
+               </tr>
+               <tr><td>Барабани</td><td><a href="tel:093-111-11-11">{{ number.drums }}</a></td></tr>
+               <tr><td>Гітара</td><td><a href="tel:093-111-11-11">{{ number.e_guitar }}</a></td></tr>
+               <tr><td>Бас-гітара</td><td><a href="tel:093-111-11-11">{{ number.bass_guitar }}</a></td></tr>
+               <tr><td>Вокал</td><td><a href="tel:093-111-11-11">{{ number.vocals }}</a></td></tr>
+               <tr><td>Клавішні</td><td><a href="tel:093-111-11-11">{{ number.piano }}</a></td></tr>
+
+              </table>
+           </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="enter-band" id="enter-band">
+
+            <h1 class="students-amount">Приєднуйтесь до нас!</h1>
+            <p class="students-amount">Ви можете залишити дані про вас або вашу дитину, та згодом ми вам зателефонуємо.</p>
+
+            <form action="" method="POST">
+                {% csrf_token %}
+
+                <div class="separate-input">
+                    <p>Вік</p>
+                    {{ form.age }}
+                </div>
+                <div class="separate-input">
+                    <p>Стать</p>
+                    {{ form.sex }}
+                </div>
+                <div class="separate-input">
+                    <p >Вокал / Гітара / Барабани / Клавішні</p>
+                    {{ form.occupation }}
+                </div>
+                <div class="separate-input">
+                    <p >Номер телефону</p>
+                    {{ form.phone_number }}
+                </div>
+
+                <button class="btn-part-of-us" type="submit">
+                    Надіслати
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="left-space">
+
+        </div>
+    </div>
+
+    <footer>
+      <p>Programmed by: Andrii Derevianko</p>
+      <p><a href="derevyanko.andrew2004@gmail.com">derevyanko.andrew2004@gmail.com</a></p>
+    </footer>
+    </div>
+
+    <script src="{% static 'smilaMusicSite/scripts/main.js' %}"></script>
+</body>
+</html>
