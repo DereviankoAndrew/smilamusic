@@ -14,7 +14,9 @@ def index(request):
         form = StudentRequestForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/#header')
+            return render(request, 'smilaMusicSite/thank-for-request.html', {
+
+            })
 
     return render(request, 'smilaMusicSite/index.html', {
         'students_amount': students_amount,
@@ -22,3 +24,4 @@ def index(request):
         'form': form,
 
     })
+

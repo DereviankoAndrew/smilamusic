@@ -43,7 +43,7 @@ header {
     opacity: 1;
 }
 
-h1, h2, h3, p, button, table, th, tr, td {
+h1, h2, h3, p, button, table, th, tr, td, select {
     font-family: 'Roboto Slab', serif;
 }
 th, td {
@@ -234,6 +234,38 @@ display: block; /* Убираем небольшой отступ снизу */
 transform: scale(1.2); /* Увеличиваем масштаб */
 }
 
+.scale-vocal {
+    display: inline-block; /* Строчно-блочный элемент */
+    width: 764px;
+    height: 380px;
+
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale-vocal img {
+transition: 1s; /* Время эффекта */
+display: block; /* Убираем небольшой отступ снизу */
+}
+.scale-vocal img:hover {
+transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.scale-vocal-children {
+    display: inline-block; /* Строчно-блочный элемент */
+
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale-vocal-children img {
+transition: 1s; /* Время эффекта */
+display: block; /* Убираем небольшой отступ снизу */
+}
+.scale-vocal-children img:hover {
+transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.feg {
+    height: 764px;
+}
+
+
 .socmedia-logo {
     display:inline-block;
     padding: 30px;
@@ -269,6 +301,20 @@ input:hover {
 }
 .separate-input {
     margin: 20px;
+}
+select {
+    text-align: center;
+    text-decoration: none;
+
+
+    color: black;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px 60px;
+    transition-duration: 0.6s;
+}
+select:hover {
+    background-color: #CCDBDC;
 }
 .enter-input {
     margin: 5px;

@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Smila Music</title>
+    <title>Musical Ukraine</title>
     <link rel="stylesheet" href="{% static 'smilaMusicSite/styles/main.css' %}">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <header class="header" id="header">
         <div class="logo-div">
             <a href="/">
-                <h1 class="header-title">Smila Music School</h1>
+                <h1 class="header-title">Musical Ukraine</h1>
                 <img class="logo" src="{% static 'smilaMusicSite/images/rock_hand.png' %}" alt="Logo">
             </a>
         </div>
@@ -83,11 +83,21 @@
             <h1 class="secondary-h1">Напрямки для розвитку</h1>
             <h2 class="description">Оберіть свою стихію, своє натхнення, свою "медитацію"</h2>
             <div class="direction-photos">
-                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/drums.png' %}" alt="Drums"></div>
+                <a href="#enter-band">
+                    <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/drums.png' %}" alt="Drums"></div>
+                </a>
+                <a href="#enter-band">
                 <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/e-guitar.png' %}" alt="Electric Guitar"></div>
+                </a>
+                <a href="#enter-band">
                 <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/piano.png' %}" alt="Piano"></div>
+                </a>
+                <a href="#enter-band">
                 <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/b-guitar.png' %}" alt="Bass Guitar"></div>
-                <div class="scale"><img class="scale" src="{% static 'smilaMusicSite/images/vocals.png' %}" alt="Vocals"></div>
+                </a>
+                <a href="#enter-band">
+                <div class="scale-vocal"><img class="scale-vocal feg" width="500px" src="{% static 'smilaMusicSite/images/vocals.png' %}" alt="Vocals"></div>
+                </a>
 
             </div>
             <hr>
@@ -163,12 +173,12 @@
                     {{ form.sex }}
                 </div>
                 <div class="separate-input">
-                    <p >Вокал / Гітара / Барабани / Клавішні</p>
-                    {{ form.occupation }}
-                </div>
-                <div class="separate-input">
                     <p >Номер телефону</p>
                     {{ form.phone_number }}
+                </div>
+                <div class="separate-input">
+<!--                    <p >Вокал / Гітара / Барабани / Клавішні</p>-->
+                    {{ form.occupation }}
                 </div>
 
                 <button class="btn-part-of-us" type="submit">

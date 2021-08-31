@@ -1,0 +1,73 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musical Ukraine</title>
+    <link rel="stylesheet" href="{% static 'smilaMusicSite/styles/main.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header" id="header">
+        <div class="logo-div">
+            <a href="/">
+                <h1 class="header-title">Musical Ukraine</h1>
+                <img class="logo" src="{% static 'smilaMusicSite/images/rock_hand.png' %}" alt="Logo">
+            </a>
+        </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        <div class="part-of-us">
+            <h1>Дякуємо за надісланий запит! Скоро ми зателефонуємо вам.</h1>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <a href="{% url 'start' %}">
+                <button class="btn-part-of-us">Повернутись до головної сторінки</button>
+            </a>
+        </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="left-space">
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+     </div>
+    <footer>
+      <p>Programmed by: Andrii Derevianko</p>
+      <p><a href="derevyanko.andrew2004@gmail.com">derevyanko.andrew2004@gmail.com</a></p>
+    </footer>
+
+
+    <script src="{% static 'smilaMusicSite/scripts/main.js' %}"></script>
+</body>
+</html>
