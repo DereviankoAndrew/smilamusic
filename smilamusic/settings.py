@@ -86,8 +86,8 @@ WSGI_APPLICATION = 'smilamusic.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'myprojectuser',
+        'NAME': 'musical1_myproject',
+        'USER': 'musical1_myprojectuser',
         'PASSWORD': 'justmakemigrations',
         'HOST': 'localhost',
         'PORT': '',
